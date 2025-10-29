@@ -5,10 +5,9 @@ import { Markdown } from 'components/markdown';
 import { RandomQuote } from 'components/random-quote';
 import { getNetlifyContext } from 'utils';
 
-const contextExplainer = `
-The card below is rendered on the server based on the value of \`process.env.CONTEXT\` 
-([docs](https://docs.netlify.com/configure-builds/environment-variables/#build-metadata)):
-`;
+const contextExplainer = `api_12345`;
+
+
 
 const preDynamicContentExplainer = `
 The card content below is fetched by the client-side from \`/quotes/random\` (see file \`app/quotes/random/route.js\`) with a different quote shown on each page load:
